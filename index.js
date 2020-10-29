@@ -20,9 +20,9 @@ if (process.env.FFMPEG_BIN) {
     platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg'
   )
 
-  if (!binaries[platform] || binaries[platform].indexOf(arch) === -1) {
+  /*if (!binaries[platform] || binaries[platform].indexOf(arch) === -1) {
     ffmpegPath = null
-  }
+  }*/
 
   module.exports = ffmpegPath
 }
